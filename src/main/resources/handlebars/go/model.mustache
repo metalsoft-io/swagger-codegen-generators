@@ -27,7 +27,7 @@ const (
 type {{classname}} struct {
 {{#isComposedModel}}
     {{#interfaceModels}}
-    {{classname}}
+    {{classname}} `yaml:",inline"`
     {{/interfaceModels}}
 {{/isComposedModel}}
 {{^isComposedModel}}
